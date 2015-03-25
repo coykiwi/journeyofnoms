@@ -1,3 +1,183 @@
 html  {
+  background: url(images/woodbg.jpg) repeat fixed;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #e06148;
+}
+
+.arrow {
+  width: 40px;
+  float: right;
+  border: 1px blue solid;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+a:hover .arrow {
+  background: url("images/arrow-solid.png") no-repeat;
+  background-size: 100%;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 100px;
+  color: #7d4544;
+}
+
+h3 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 40px;
+  color: #fff;
+  border: 1px red solid;
+  float: left;
+
+}
+
+/*TOP LEVEL RULES */
+
+#top {
+  width: 100%;
+  overflow: hidden;
+}
+
+#topcontainer {
+  margin: 2% 5%;
+  overflow: hidden;
+  height: 30vh;
+  min-height: 80px;
+}
+
+#logo {
+  width: 25%;
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#logo img {
+  width: 100%;
+}
+
+#socialnav {
+  width: 70%;
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#socialnav a {
+  border: none;
+  text-decoration: none;
+}
+
+#socialnav ul {
+  padding: 0;
+  overflow: hidden;
+}
+
+#socialnav li {
+  display: inline;
+  width: 15%;
+  float: right;
+  margin-left: 5%;
+}
+
+#socialnav img {
+  width: 80%;
+  padding: 10%;
+}
+
+/* MAIN NAVIGATION */
+
+#mainnav {
+  background: #e06148;
+  padding: 2%;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 50px;
+  overflow: hidden;
+}
+
+#mainnav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 25px;
+  baseline-shift: -20px;
+}
+
+#mainnav a:hover {
+  border: 1px solid #fff;
+}
+
+#mainnav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#mainnav li {
+  display: inline;
+  text-align: center;
+  margin: 0 2%;
+}
+
+/* HEADER */
+
+header {
+  background: url("images/burger2.jpg") fixed no-repeat;
+  background-size: 100%;
+  width: 100%;
+  padding: 10% 0;
+  overflow: auto;
+}
+
+#blurbcontainer {
+  float: right;
+  width: 35%;
+  min-width: 100px;
+  margin: 0 4%;
+  overflow: auto;
+  clear: both;
+}
+
+#blurb {
+  background: #fff;
+  padding: 3% 7%;
+  width: 90%;
+  overflow: auto;
+}
+
+#readmore {
+  background: #308e82;
+  border: 1px solid yellow;
+  overflow: auto;
+  height: 10%;
+}
+
+#buttoncontainer {
+  overflow: auto;
+  margin: 2% 10%;
+  height: 40px;
+  border: 1px yellow solid;
+}
+
+
+/* POSTS */
+
+#posts {
   background: #efe9e8;
+  overflow: hidden;
+}
+
+.post-square {
+  background: url("images/turkeyquesadilla2.jpg");
+  background-size: 100%;
 }

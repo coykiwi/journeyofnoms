@@ -7,20 +7,27 @@
   <title>Home | A Journey Of Noms</title>
 
   <link href='http://fonts.googleapis.com/css?family=Oswald|Amatic+SC|Open+Sans:300,600' rel='stylesheet' type='text/css'>
-
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="normalize.css" rel="stylesheet" type="text/css">
 </head>
 
 <body id="home">
 
-<div id="logos">
-  <a href="http://food.coykiwi.com"><img src="images/logo.png" alt="A Journey Of Noms logo"></a>
-  <nav id="socialnav">
-    <ul>
-      <li class="social"><a href="http://www.instagram.com/coykiwi" alt="instagram logo"><img src="instagram.png"></a></li>
-      <li class="social"><a href="http://www.facebook.com/coykiwidesign" alt="facebook logo"><img src="facebook.png"></a></li>
-      <li class="social"><a href="http://www.twitter.com/coykiwi" alt="twitterlogo"><img src="twitter.png"></a></li>
-    </ul>
-  </nav>
+<div id="top">
+  <div id="topcontainer">
+    <div id="logo">
+      <a href="http://food.coykiwi.com">
+        <img src="images/logo.png" alt="A Journey of Noms logo">
+      </a>
+    </div>
+    <nav id="socialnav">
+      <ul>
+        <li><a href="http://www.instagram.com/coykiwi" alt="instagram logo"><img src="images/instagram.png"></a></li>
+        <li><a href="http://www.facebook.com/coykiwidesign" alt="facebook logo"><img src="images/facebook.png"></a></li>
+        <li><a href="http://www.twitter.com/coykiwi" alt="twitterlogo"><img src="images/twitter.png"></a></li>
+      </ul>
+    </nav>
+  </div>
 </div>
 
 <nav id="mainnav">
@@ -35,12 +42,20 @@
 
 <header>
   <!-- background image is 100% of its contaner -->
-  <div id="blurb">
-    <h1><!-- title of post --></h2>
-    <p><!-- first 20 words of post -->...</p>
-  </div>
-  <div id="readmore button">
-    <h2>read the whole thing <img src="images/arrow-line.png"></h2>
+  <div id="blurbcontainer">
+    <div id="blurb">
+      <h1 class="title">This is the post title  - what if this title is even longer?</h1>
+      <p>These are the first 20 words of the post here and it is pretty awesome...      Yup, these are definitely some pretty awesome words we got going here
+      </p>
+    </div>
+    <a href="post.html">
+      <div id="readmore">
+        <div id="buttoncontainer">
+          <h3>read the whole thing</h3>
+          <img class="arrow" src="images/arrow-line.png">
+        </div>
+      </div>
+    </a>
   </div>
 </header>
 
@@ -62,10 +77,8 @@
       </h2>
       <a href="post2.html">
         <div class="post-readbutton">
-          <p class="read">
-            Give it a read
-            <img src="images/arrow-line.png" alt="read more arrow button">
-          </p>
+          <p class="read">Give it a read</p>
+          <img class="arrow" src="images/arrow-line.png" alt="read more arrow button">
         </div>
       </a>
     </div>
@@ -88,7 +101,7 @@
         <div class="post-readbutton">
           <p class="read">
             Give it a read
-            <img src="images/arrow-line.png" alt="read more arrow button">
+            <img class="arrow" src="images/arrow-line.png" alt="read more arrow button">
           </p>
         </div>
       </a>
@@ -96,16 +109,15 @@
 
 
     <div id="post3">
-      <div id="post-date">
-        <p><!-- date --></p>
-      </div>
-      <div id="post-square">
+      <div class="post-square">
         <!-- background image is the first image in the post? -->
       </div>
-      <div id="marsala-overlay">
+      <div class="overlay">
         <!-- overlay color: #7d4544 opacity: 70% hidden on a:hover -->
       </div>
-
+      <div class="post-date">
+        <p><!-- date --></p>
+      </div>
       <h2 class="post-title">
         Post title here <!-- hidden on a:hover -->
       </h2>
@@ -113,7 +125,7 @@
         <div class="post-readbutton">
           <p class="read">
             Give it a read
-            <img src="images/arrow-line.png" alt="read more arrow button">
+            <img class="arrow" src="images/arrow-line.png" alt="read more arrow button">
           </p>
         </div>
       </a>
