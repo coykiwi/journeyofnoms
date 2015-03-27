@@ -11,33 +11,27 @@ a {
 }
 
 .arrow {
-  width: 40px;
+  width: 30px;
+  margin-top: 5px;
   float: right;
-  border: 1px blue solid;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-a:hover .arrow {
+a:hover .arrow, a:hover .postarrow {
   background: url("images/arrow-solid.png") no-repeat;
   background-size: 100%;
 }
 
-h1 {
+h1, h2 {
   font-family: "Oswald", sans-serif;
-  font-size: 100px;
   color: #7d4544;
+  font-weight: 400;
 }
 
-h3 {
-  font-family: "Amatic SC", sans-serif;
-  font-size: 40px;
-  color: #fff;
-  border: 1px red solid;
-  float: left;
-
+p {
+  font-size: 20px;
 }
+
+
 
 /*TOP LEVEL RULES */
 
@@ -101,7 +95,7 @@ h3 {
   background: #e06148;
   padding: 2%;
   font-family: "Amatic SC", sans-serif;
-  font-size: 50px;
+  font-size: 3vw;
   overflow: hidden;
 }
 
@@ -132,9 +126,9 @@ h3 {
 /* HEADER */
 
 header {
-  background: url("images/burger2.jpg") fixed no-repeat;
+  background: url("images/burger2.jpg") fixed no-repeat; /* remove fixed when on mobile */
   background-size: 100%;
-  width: 100%;
+  height: 100%;
   padding: 10% 0;
   overflow: auto;
 }
@@ -145,29 +139,39 @@ header {
   min-width: 100px;
   margin: 0 4%;
   overflow: auto;
-  clear: both;
 }
 
 #blurb {
   background: #fff;
   padding: 3% 7%;
-  width: 90%;
+  width: 86%;
   overflow: auto;
 }
 
-#readmore {
+#button {
+  width: 100%;
+  float: right;
+  overflow: hidden;
   background: #308e82;
-  border: 1px solid yellow;
-  overflow: auto;
-  height: 10%;
+
 }
 
 #buttoncontainer {
-  overflow: auto;
+  overflow: hidden;
   margin: 2% 10%;
-  height: 40px;
-  border: 1px yellow solid;
+  display: block;
 }
+
+#buttontext {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
 
 
 /* POSTS */
@@ -175,9 +179,79 @@ header {
 #posts {
   background: #efe9e8;
   overflow: hidden;
+  padding: 2.5vw;
+  color: #fff;
 }
 
-.post-square {
-  background: url("images/turkeyquesadilla2.jpg");
+.post {
+  width: 27.5vw;
+  height: 27.5vw;
+  float: left;
+  clear: right;
+  background: url("images/quesadilla.jpg");
   background-size: 100%;
+  margin: 2vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  width: 27.5vw;
+  height: 27.5vw;
+  background: rgba(125,69,68,0.6);
+  position: absolute;
+  top: 0;
+}
+
+a:hover .overlay {
+  visibility: hidden;
+}
+
+a:hover .post-title {
+  visibility: hidden;
+}
+
+.post-date {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  overflow: auto;
+  background: #308e82;
+  width: 10vw;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.post-title {
+  color: #fff;
+  text-align: center;
+  padding: 2%;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3vw;
+
+}
+
+.post-button {
+  background: #308e82;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.postarrow {
+  margin: 15px;
+  width: 50px;
+}
+
+.read {
+  color: #fff;
 }
