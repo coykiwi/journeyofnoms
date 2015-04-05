@@ -299,6 +299,10 @@ a:hover .post-title {
     margin: 0 3%;
   }
 
+  #blurbcontainer {
+    width: 50%;
+  }
+
 @media (max-width: 800px) {
 
   .post {
@@ -329,7 +333,7 @@ a:hover .post-title {
   }
 
   #blurbcontainer {
-    width: 50%;
+    width: 60%;
   }
 
   #logo {
