@@ -14,6 +14,7 @@ a {
   width: 30px;
   margin-top: 2px;
   float: right;
+  transition: background- ease 0.5s;
 }
 
 a:hover .arrow,
@@ -53,10 +54,17 @@ p {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+
 }
 
 #logo img {
-  width: 100%;
+  width: 95%;
+  margin: 2.5%;
+  transition: width ease 0.1s
+}
+
+#logo img:hover {
+  width: 97%;
 }
 
 #socialnav {
@@ -85,8 +93,13 @@ p {
 }
 
 #socialnav img {
-  width: 80%;
+  width: 77%;
   padding: 10%;
+  transition: width ease 0.1s
+}
+
+#socialnav img:hover {
+  width: 80%;
 }
 
 /* MAIN NAVIGATION */
@@ -104,10 +117,13 @@ p {
   text-decoration: none;
   padding: 0 25px;
   baseline-shift: -20px;
+  border: 2px solid transparent;
+  transition: border-color ease 0.1s;
 }
 
 #mainnav a:hover {
-  border: 1px solid #fff;
+  border: 2px solid #fff;
+
 }
 
 #mainnav ul {
@@ -120,12 +136,12 @@ p {
 #mainnav li {
   display: inline;
   text-align: center;
-  margin: 0 2%;
+  margin: 0 5%;
 }
 
 /* HEADER */
 
-header {
+#homeheader {
   background: url("images/burger2.jpg") fixed no-repeat; /* remove fixed when on mobile */
   background-size: 110%;
   height: 100%;
@@ -199,6 +215,7 @@ header {
   top: 0;
 }
 
+
 a:hover .overlay {
   visibility: hidden;
 }
@@ -257,7 +274,7 @@ a:hover .post-title {
   color: #fff;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
   header {
     background: url("images/burger2.jpg") no-repeat center;
@@ -349,5 +366,7 @@ a:hover .post-title {
   #topcontainer {
     min-height: 75px;
   }
+
+
 
 }
