@@ -5,6 +5,10 @@ html  {
   font-weight: 300;
 }
 
+body {
+  min-width: 300px;
+}
+
 a {
   text-decoration: none;
   color: #e06148;
@@ -274,13 +278,29 @@ a:hover .post-title {
   color: #fff;
 }
 
-@media (max-width: 900px) {
+/* RESPONSIVE */
 
-  header {
-    background: url("images/burger2.jpg") no-repeat center;
-    background-size: auto 150%;
+@media (max-width: 1000px) {
+
+  #homeheader {
+    background: url("images/burger2.jpg") no-repeat fixed center;
+    background-size: 200% auto;
     overflow: hidden;
   }
+
+  #mainnav {
+    background: #e06148;
+    padding: 2%;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 4vw;
+    overflow: hidden;
+  }
+  #mainnav li {
+    margin: 0 3%;
+  }
+
+@media (max-width: 800px) {
+
   .post {
     width: 91vw;
     height: 40vw;
@@ -327,9 +347,31 @@ a:hover .post-title {
   #topcontainer {
     min-height: 150px;
   }
+
+  #mainnav {
+    font-size: 5vw;
+
+  }
+  #mainnav li {
+    margin: 0;
+  }
+
+  a:hover .overlay {
+    visibility: visible;
+  }
+
+  a:hover .post-title {
+    visibility: visible;
+  }
 }
 
 @media (max-width: 500px) {
+
+  #homeheader {
+    background: url("images/burger2.jpg") no-repeat fixed center;
+    background-size: 300% auto;
+    overflow: hidden;
+  }
   #buttontext {
     font-size: 30px;
   }
@@ -359,14 +401,11 @@ a:hover .post-title {
 
   #mainnav li {
     display: block;
-    width: 90%;
-    font-size: 10vw;
+    width: 100%;
+    font-size: 8vw;
   }
 
   #topcontainer {
     min-height: 75px;
   }
-
-
-
 }
