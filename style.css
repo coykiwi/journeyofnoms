@@ -44,7 +44,7 @@ p {
   margin: 2% 5%;
   overflow: hidden;
   height: 30vh;
-  min-height: 80px;
+  min-height: 200px;
 }
 
 #logo {
@@ -136,7 +136,6 @@ header {
 #blurbcontainer {
   float: right;
   width: 35%;
-  min-width: 100px;
   margin: 0 4%;
   overflow: auto;
 }
@@ -307,9 +306,13 @@ a:hover .post-title {
   #buttontext {
     font-size: 25px;
   }
+
+  #topcontainer {
+    min-height: 150px;
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #buttontext {
     font-size: 30px;
   }
@@ -332,4 +335,19 @@ a:hover .post-title {
   #socialnav li {
     width: 25%;
   }
+
+  #mainnav ul {
+    display: block;
+  }
+
+  #mainnav li {
+    display: block;
+    width: 90%;
+    font-size: 10vw;
+  }
+
+  #topcontainer {
+    min-height: 75px;
+  }
+
 }
