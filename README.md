@@ -1,2 +1,2 @@
 # journeyofnoms
-for my food blog A Journey of Noms http://food.coykiwi.com
+a postach.io theme designed for my foodblog http://journeyofnoms.com
