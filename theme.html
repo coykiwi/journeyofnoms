@@ -85,8 +85,8 @@
   <header id="homeheader">
     <div id="blurbcontainer">
       <div id="blurb">
-        <h1 class="title">TODO</h1>
-        TODO
+        <h1 class="title">{{ posts[0].title }}</h1>
+        {{ posts[0].content|truncate(255) }}
       </div>
       <div id="button">
         <a href="{{ post.url }}">
@@ -115,7 +115,7 @@
 
             </div>
             <div class="post-date">
-              <p>{{ post.created_at|format_date(format='%b %m') }}</p>
+              <p>{{ post.created_at|format_date }}</p>
             </div>
 
             <h2 class="post-title">{{ post.title }}</h2>
