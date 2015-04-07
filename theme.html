@@ -26,7 +26,7 @@
     </div>
     <nav id="socialnav">
       <ul>
-        <li><a href="http://www.instagram.com/journeyofnoms"><img src="{{ assets('images/instagram.png') }}" alt="instagram logo" target="_blank"></a></li>
+        <li><a href="http://www.instagram.com/journeyofnoms" target="_blank"><img src="{{ assets('images/instagram.png') }}" alt="instagram logo" target="_blank"></a></li>
         <li><a href="https://www.pinterest.com/journeyofnoms/" target="_blank"><img src="{{ assets('images/pinterest.png') }}" alt="pinterest logo"></a></li>
         <li><a href="http://www.twitter.com/journeyofnoms" target="_blank"><img src="{{ assets('images/twitter.png') }}" alt="twitter logo"></a></li>
       </ul>
@@ -81,7 +81,13 @@
 {% endif %}
 
 {% if is_home or is_tag %}}
-  <header id="homeheader">
+  {% if posts[0].photos %}
+    {% set featured_photo = posts[0].photos[0].orig %}
+  {% else %}
+    {% set featured_photo = 'http:placekitten.com/1024/600' %}
+  {% endif %}
+
+  <header id="homeheader" style="background: url('{{ featured_photot }}')">
     <div id="blurbcontainer">
       <div id="blurb">
         <h1 class="title">{{ posts[0].title }}</h1>
