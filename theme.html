@@ -86,7 +86,7 @@
     <div id="blurbcontainer">
       <div id="blurb">
         <h1 class="title">{{ posts[0].title }}</h1>
-        {{ posts[0].content|striptags|truncate(255) }}
+        {{ posts[0].content|striptags|truncate(125) }}
       </div>
       <div id="button">
         <a href="{{ post.url }}">
