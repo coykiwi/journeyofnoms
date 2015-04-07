@@ -238,6 +238,18 @@ header {
   color: #fff;
 }
 
+/* FOOTER */
+
+footer {
+  padding: 10%;
+}
+
+footer p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
 /* POSTS */
 
 #content {

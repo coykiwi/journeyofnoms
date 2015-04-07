@@ -87,7 +87,7 @@
     {% set featured_photo = 'http://placekitten.com/1024/600' %}
   {% endif %}
 
-  <header id="homeheader" style="background: url('{{ featured_photo }}'); background-size: 100%">
+  <header id="homeheader" style="background: url('{{ featured_photo }}') fixed center no-repeat; background-size: 100%">
     <div id="blurbcontainer">
       <div id="blurb">
         <h1 class="title">{{ posts[0].title }}</h1>
