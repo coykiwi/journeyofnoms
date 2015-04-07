@@ -46,7 +46,7 @@
 
 {% if is_post or is_link %}
   {% if post.photos %}
-    {% set main_photo = post.photos.orig %}
+    {% set main_photo = post.photos[0].orig %}
   {% else %}
     {% set main_photo = '' %}
   {% endif %}
@@ -106,7 +106,7 @@
       {% if not loop.first %}
         <a href="{{ post.url }}">
           {% if post.photos %}
-            {% set main_photo = post.photos.orig %}
+            {% set main_photo = post.photos[0].orig %}
           {% else %}
             {% set main_photo = '' %}
           {% endif %}
