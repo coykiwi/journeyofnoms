@@ -39,7 +39,7 @@
     <li><a id="recipes" href="/tag/recipes">recipes</a></li>
     <li><a id="reviews" href="/tag/reviews">reviews</a></li>
     <li><a id="inspirations" href="/tag/inspirations">inspirations</a></li>
-    <li><a id="about" href="/page/about-me">about me</a></li>
+    <li><a id="about" href="/page/oh-hai-there">about me</a></li>
   </ul>
 </nav>
 
@@ -75,10 +75,21 @@
 
 {% if is_page %}
   <header id="aboutheader">
-    <div id="hai"><h2 id="aboutme">{{ page.title }}</h2></div>
+    <div id="hai"><h2 id="aboutme">Oh hai there!</h2></div>
   </header>
-
-  <div id="content">{{ page.content }}</div>
+  <div id="content">
+    <h1>Hey, who are you?<h1>
+    <p>I'm Carrie, and I'm a bit of a food nerd.</p>
+    <p>I started out baking with my mom when I was a kid, but I rarely lasted a whole session; I usually only stuck around to crack the eggs and sneak some chocolate chips or dip my fingers in icing sugar.</p>
+    <h1>And what's this all about?</h1>
+    <p>Bacon ipsum dolor amet anim laboris ut ham hock, pancetta filet mignon flank ribeye jerky tempor laborum ad chuck duis. Proident tongue turducken ea ex lorem ut ad drumstick. Officia ex pork belly reprehenderit beef ut shankle alcatra pork nulla pariatur. Ullamco dolore kielbasa proident do short loin pork loin frankfurter exercitation meatloaf culpa. Biltong in ut nulla flank enim.</p>
+    <h1>Now, why should I stick around?</h1>
+    <p>Bacon ipsum dolor amet anim laboris ut ham hock, pancetta filet mignon flank ribeye jerky tempor laborum ad chuck duis. Proident tongue turducken ea ex lorem ut ad drumstick. Officia ex pork belly reprehenderit beef ut shankle alcatra pork nulla pariatur. Ullamco dolore kielbasa proident do short loin pork loin frankfurter exercitation meatloaf culpa. Biltong in ut nulla flank enim.</p>
+    <h1>So how do I contact you?</h1>
+    <p>You can <a href="mailto:noms@coykiwi.com">pop me an email</a>, or I'm also on some of them social media websites. I've got the links up at the top, if that's what you're into. I love connecting with people!</p>
+    <h1>Oh, what else are you up to?</h1>
+    <p>Bacon ipsum dolor amet anim laboris ut ham hock, pancetta filet mignon flank ribeye jerky tempor laborum ad chuck duis. Proident tongue turducken ea ex lorem ut ad drumstick. Officia ex pork belly reprehenderit beef ut shankle alcatra pork nulla pariatur. Ullamco dolore kielbasa proident do short loin pork loin frankfurter exercitation meatloaf culpa. Biltong in ut nulla flank enim.</p>
+  </div>
 {% endif %}
 
 {% if is_home or is_tag %}}
