@@ -46,9 +46,9 @@
 
 {% if is_post or is_link %}
   {% if post.photos %}
-    {% main_photo = post.photos.orig %}
+    {% set main_photo = post.photos.orig %}
   {% else %}
-    {% main_photo = '' %}
+    {% set main_photo = '' %}
   {% endif %}
   <header id="postheader" style="background: url('{{ main_photo }}')">
   </header>
@@ -106,9 +106,9 @@
       {% if not loop.first %}
         <a href="{{ post.url }}">
           {% if post.photos %}
-            {% main_photo = post.photos.orig %}
+            {% set main_photo = post.photos.orig %}
           {% else %}
-            {% main_photo = '' %}
+            {% set main_photo = '' %}
           {% endif %}
           <div class="post" style="background: url('{{ main_photo }}')">
             <div class="overlay">
