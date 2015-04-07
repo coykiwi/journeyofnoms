@@ -1,5 +1,5 @@
 html  {
-  background: url("assets/images/woodbg.jpg") repeat fixed;
+  background: url("../images/woodbg.jpg") repeat fixed;
   width: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -30,7 +30,7 @@ a:hover {
 
 a:hover .arrow,
 a:hover .postarrow {
-  background: url("assets/images/arrow-solid.png") no-repeat;
+  background: url("../images/arrow-solid.png") no-repeat;
   background-size: 100%;
 }
 
@@ -171,19 +171,19 @@ header {
 }
 
 #postheader {
-  background: url("assets/images/burger2.jpg") no-repeat center;
+  background: url("../images/burger2.jpg") no-repeat center;
   background-size: 100%;
   padding: 20% 0;
 }
 
 #aboutheader {
-  background: url("assets/images/aboutheader.jpg") no-repeat right;
+  background: url("../images/aboutheader.jpg") no-repeat right;
   background-size: 110%;
   padding: 15% 0;
 }
 
 #homeheader {
-  background: url("assets/images/burger2.jpg") fixed center no-repeat;
+  background: url("../images/burger2.jpg") fixed center no-repeat;
   background-size: 110%;
   padding: 10% 0;
 }
@@ -258,7 +258,7 @@ header {
   height: 27.5vw;
   float: left;
   clear: right;
-  background: url("assets/images/quesadilla.jpg");
+  background: url("../images/quesadilla.jpg");
   background-size: 100%;
   margin: 2vw;
   position: relative;
@@ -374,7 +374,7 @@ a:hover .post-title {
 @media (max-width: 1000px) {
 
   #homeheader {
-    background: url("assets/images/burger2.jpg") no-repeat fixed center;
+    background: url("../images/burger2.jpg") no-repeat fixed center;
     background-size: 200% auto;
     overflow: hidden;
   }
@@ -486,7 +486,7 @@ a:hover .post-title {
   }
 
   #homeheader {
-    background: url("assets/images/burger2.jpg") no-repeat fixed center;
+    background: url("../images/burger2.jpg") no-repeat fixed center;
     background-size: 300% auto;
     overflow: hidden;
   }
