@@ -39,7 +39,7 @@
     <li><a id="recipes" href="/tag/recipes">recipes</a></li>
     <li><a id="reviews" href="/tag/reviews">reviews</a></li>
     <li><a id="inspirations" href="/tag/inspirations">inspirations</a></li>
-    <li><a id="about" href="/page/oh-hai-there">about me</a></li>
+    <li><a id="about" href="/page/oh-hai-there">about</a></li>
   </ul>
 </nav>
 
@@ -133,7 +133,20 @@
     {% endfor %}
 
   </div>
-{% endif %}
+
+  <div class="post-navigation">
+      {% if pagination.prev or pagination.next %}
+      <nav class="pagination" role="navigation">
+      {% if pagination.prev %}
+      <a class="newer-posts" href="{{ pagination.prev }}">&larr; Newer Posts</a>
+      {% endif %}
+      {% if pagination.next %}
+      <a class="older-posts" href="{{ pagination.next }}">Older Posts &rarr;</a>
+      {% endif %}
+      </nav>
+      {% endif %}
+      </div>
+      {% endif %}
 
 <!-- v1.1 -->
 

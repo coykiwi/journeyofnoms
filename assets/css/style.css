@@ -249,6 +249,8 @@ footer p {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: #fff;
+  text-align: center;
+  display: inline;
 }
 
 /* POSTS */
