@@ -88,7 +88,7 @@
         {{ posts[0].content|striptags|truncate(125) }}
       </div>
       <div id="button">
-        <a href="{{ post.url }}">
+        <a href="{{ posts[0].url }}">
           <div id="buttoncontainer">
             <h3 id="buttontext">read the whole thing</h3>
             <img class="arrow" src="{{ assets('images/arrow-line.png') }}">
