@@ -1,5 +1,5 @@
 html  {
-  background: url(images/woodbg.jpg) repeat fixed;
+  background: url("assets/images/woodbg.jpg") repeat fixed;
   width: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -11,31 +11,43 @@ body {
 
 a {
   text-decoration: none;
-  color: #e06148;
+  color: #e06148; /* orange */
+  font-weight: 600;
+  transition: color ease 0.25s
+  border: none;
+}
+
+a:hover {
+  color: #308e82;
+  border: none;
 }
 
 .arrow {
   width: 30px;
   margin-top: 2px;
   float: right;
-  transition: background- ease 0.5s;
 }
 
 a:hover .arrow,
 a:hover .postarrow {
-  background: url("images/arrow-solid.png") no-repeat;
+  background: url("assets/images/arrow-solid.png") no-repeat;
   background-size: 100%;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: "Oswald", sans-serif;
-  color: #7d4544;
+  color: #7d4544; /* marsala */
   font-weight: 400;
 }
 
-p {
+p,
+content p {
   font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #000;
 }
+
 
 
 /*TOP LEVEL RULES */
@@ -58,7 +70,8 @@ p {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 }
 
 #logo img {
@@ -77,6 +90,8 @@ p {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 }
 
 #socialnav a {
@@ -109,7 +124,7 @@ p {
 /* MAIN NAVIGATION */
 
 #mainnav {
-  background: #e06148;
+  background: #e06148; /* orange */
   padding: 2%;
   font-family: "Amatic SC", sans-serif;
   font-size: 3.5vw;
@@ -123,6 +138,7 @@ p {
   baseline-shift: -20px;
   border: 2px solid transparent;
   transition: border-color ease 0.1s;
+  font-weight: 200;
 }
 
 #mainnav a:hover {
@@ -134,6 +150,10 @@ p {
   margin: 0;
   padding: 0;
   display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   justify-content: center;
 }
 
@@ -145,15 +165,31 @@ p {
 
 /* HEADER */
 
-#homeheader {
-  background: url("images/burger2.jpg") fixed no-repeat; /* remove fixed when on mobile */
-  background-size: 110%;
-  height: 100%;
-  padding: 10% 0;
+header {
   overflow: auto;
+  height: 100%;
 }
 
-#blurbcontainer {
+#postheader {
+  background: url("assets/images/burger2.jpg") no-repeat center;
+  background-size: 100%;
+  padding: 20% 0;
+}
+
+#aboutheader {
+  background: url("assets/images/aboutheader.jpg") no-repeat right;
+  background-size: 110%;
+  padding: 15% 0;
+}
+
+#homeheader {
+  background: url("assets/images/burger2.jpg") fixed center no-repeat;
+  background-size: 110%;
+  padding: 10% 0;
+}
+
+#blurbcontainer,
+#hai {
   float: right;
   width: 35%;
   margin: 0 4%;
@@ -171,7 +207,7 @@ p {
   width: 100%;
   float: right;
   overflow: hidden;
-  background: #308e82;
+  background: #308e82; /* teal */
 }
 
 #buttoncontainer {
@@ -190,10 +226,28 @@ p {
   padding: 0;
 }
 
+#hai {
+  text-align: center;
+  font-size: 4vw;
+  border: 2px solid #fff;
+}
+
+#aboutme {
+  font-family: "Amatic SC", sans-serif;
+  color: #fff;
+}
+
 /* POSTS */
 
+#content {
+  background: #efe9e8; /* off-white */
+  overflow: hidden;
+  padding: 5% 10%;
+  color: #fff;
+}
+
 #posts {
-  background: #efe9e8;
+  background: #efe9e8; /* off-white */
   overflow: hidden;
   padding: 2.5vw;
   color: #fff;
@@ -204,7 +258,7 @@ p {
   height: 27.5vw;
   float: left;
   clear: right;
-  background: url("images/quesadilla.jpg");
+  background: url("assets/images/quesadilla.jpg");
   background-size: 100%;
   margin: 2vw;
   position: relative;
@@ -231,7 +285,7 @@ a:hover .post-title {
 .post-date {
   text-align: center;
   overflow: auto;
-  background: #308e82;
+  background: #308e82; /* teal */
   width: 10vw;
   z-index: 99;
   position: absolute;
@@ -256,12 +310,14 @@ a:hover .post-title {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   font-size: 2.5vw;
 
 }
 
 .post-button {
-  background: #308e82;
+  background: #308e82; /* teal */
   width: 80px;
   height: 80px;
   position: absolute;
@@ -278,12 +334,47 @@ a:hover .post-title {
   color: #fff;
 }
 
+#infobox {
+  border: 2px solid #308e82;
+  color: #308e82;
+  width: 35%;
+  float: left;
+  margin: 4vh 5vw 3vw 0;
+  overflow: auto;
+}
+
+#date {
+  float: right;
+  margin: 0 0 15% 0;
+  padding: 5%;
+  color: #308e82;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 4vw;
+
+}
+
+#title {
+  float: right;
+  margin: 0;
+  padding: 5%;
+  font-size: 4vw;
+  text-align: right;
+}
+
+#comments {
+  padding: 10%;
+}
+
+#comments p {
+  color: #fff;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 1000px) {
 
   #homeheader {
-    background: url("images/burger2.jpg") no-repeat fixed center;
+    background: url("assets/images/burger2.jpg") no-repeat fixed center;
     background-size: 200% auto;
     overflow: hidden;
   }
@@ -295,8 +386,9 @@ a:hover .post-title {
     font-size: 4vw;
     overflow: hidden;
   }
+
   #mainnav li {
-    margin: 0 3%;
+    margin: 0 3.5%;
   }
 
   #blurbcontainer {
@@ -357,7 +449,7 @@ a:hover .post-title {
 
   }
   #mainnav li {
-    margin: 0;
+    margin: 0%;
   }
 
   a:hover .overlay {
@@ -367,15 +459,38 @@ a:hover .post-title {
   a:hover .post-title {
     visibility: visible;
   }
+
+  #infobox {
+    width: 50%;
+  }
 }
 
 @media (max-width: 500px) {
 
+  #infobox {
+    width: 100%;
+  }
+
+  #date {
+    margin: 0;
+    font-size: 8vw;
+
+  }
+
+  #title {
+    float: right;
+    margin: 0;
+    padding: 5%;
+    font-size: 8vw;
+    text-align: right;
+  }
+
   #homeheader {
-    background: url("images/burger2.jpg") no-repeat fixed center;
+    background: url("assets/images/burger2.jpg") no-repeat fixed center;
     background-size: 300% auto;
     overflow: hidden;
   }
+
   #buttontext {
     font-size: 30px;
   }
