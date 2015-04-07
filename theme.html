@@ -50,7 +50,7 @@
   {% else %}
     {% set main_photo = '' %}
   {% endif %}
-  <header id="postheader" style="background: url('{{ main_photo }}')">
+  <header id="postheader" style="background: url('{{ main_photo }}'); background-size: 100%">
   </header>
 
   <div id="content">
@@ -109,7 +109,7 @@
           {% else %}
             {% set main_photo = '' %}
           {% endif %}
-          <div class="post" style="background: url('{{ main_photo }}'); background-size: 100%">
+          <div class="post" style="background: url('{{ main_photo }}')">
             <div class="overlay">
 
             </div>
