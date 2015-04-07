@@ -44,7 +44,7 @@
 </nav>
 
 
-{% if is_post %}
+{% if is_post or is_link %}
   <header id="postheader" style="background: url('{{ post.photos[0].width_800 }}')">
   </header>
 
@@ -70,13 +70,13 @@
 
 {% if is_page %}
   <header id="aboutheader">
-    <div id="hai"><h2 id="aboutme">Oh hai there!</h2></div>
+    <div id="hai"><h2 id="aboutme">{{ page.title }}</h2></div>
   </header>
 
   <div id="content">{{ page.content }}</div>
 {% endif %}
 
-{% if is_home %}}
+{% if is_home or is_tag %}}
   <header id="homeheader">
     <div id="blurbcontainer">
       <div id="blurb">
