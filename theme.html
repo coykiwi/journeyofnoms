@@ -87,11 +87,11 @@
     {% set featured_photo = 'http://placekitten.com/1024/600' %}
   {% endif %}
 
-  <header id="homeheader" style="background: url('{{ featured_photo }}') center no-repeat; background-size: 110%">
+  <header id="homeheader" style="background: url('{{ featured_photo }}') center top no-repeat; background-size: 110%">
     <div id="blurbcontainer">
       <div id="blurb">
         <h1 class="title">{{ posts[0].title }}</h1>
-        {{ posts[0].content|striptags|truncate(125) }}
+        <p>{{ posts[0].content|striptags|truncate(125) }}</p>
       </div>
       <div id="button">
         <a href="{{ posts[0].url }}">
@@ -136,7 +136,7 @@
       {% if pagination.prev or pagination.next %}
         <nav class="pagination" role="navigation">
           {% if pagination.prev %}
-            <a class="newer-posts" href="{{ pagination.prev }}"><button>&#9664; Newer Posts</button></a>
+            <a class="newer-posts" href="{{ pagination.prev }}">&#9664; Newer Posts</a>
           {% endif %}
           {% if pagination.next %}
             <a class="older-posts" href="{{ pagination.next }}"><button>Older Posts &#9654;</button></a>
