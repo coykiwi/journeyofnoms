@@ -10,6 +10,8 @@
   <meta name="keywords" content="fun food blog,food blogger,food writer,recipes,nanaimo restaurant review">
   <meta name="author" content="Carrie Brisson">
 
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
   <link href='http://fonts.googleapis.com/css?family=Oswald|Amatic+SC|Open+Sans:300,600' rel='stylesheet' type='text/css'>
   <link href="{{ assets('css/style.css') }}" rel="stylesheet" type="text/css">
   <link href="{{ assets('css/normalize.css') }}" rel="stylesheet" type="text/css">
@@ -116,7 +118,7 @@
           {% else %}
             {% set main_photo = '' %}
           {% endif %}
-          <div class="post" style="background: url('{{ main_photo }}') center;">
+          <div class="post" style="background: url('{{ main_photo }}') center no-repeat; background-size: 150%;">
             <div class="overlay">
 
             </div>
