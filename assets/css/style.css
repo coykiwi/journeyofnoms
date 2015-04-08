@@ -188,17 +188,17 @@ content ul, {
   font-family: "Amatic SC", sans-serif;
   color: #fff;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 2vw;
   border: 2px solid transparent;
   text-decoration: none;
   padding: 5%;
 }
 
-    .post-navigation a:hover {
-      border: 2px solid #e06148;
-      background: transparent;
-      color: #e06148;
-    }
+.post-navigation a:hover {
+  border: 2px solid #e06148;
+  background: transparent;
+  color: #e06148;
+}
 
 /* HEADER */
 
