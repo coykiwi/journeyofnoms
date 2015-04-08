@@ -94,8 +94,8 @@
     {% set featured_photo = 'http://placekitten.com/1024/600' %}
   {% endif %}
 
-  <header id="homeheader" style="background: url('{{ featured_photo }}') top no-repeat; background-size: 110%"; @media only screen and (max-device-width: 640px) {#homeheader {
-    background-size: 300% auto;}>
+  <header id="homeheader" style="background: url('{{ featured_photo }}') top no-repeat; background-size: 110%; @media only screen and (max-device-width: 640px) {  #homeheader {
+      background-size: 300% auto;}">
     <div id="blurbcontainer">
       <div id="blurb">
         <h1 class="title">{{ posts[0].title }}</h1>
