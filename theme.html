@@ -60,7 +60,7 @@
     <div id="infobox">
       <h3 id="date">{{ post.created_at|format_date }}</h3>
       <h2 id="title">{{ post.title }}</h2>
-    </div>{{ post.content }}</div>
+    </div>{{ post.content }}
   </div>
 
   <div id="comments">
@@ -141,7 +141,7 @@
     {% endfor %}
 
   </div>
-</div>
+
 
   <div class="post-navigation">
     {% if pagination.prev or pagination.next %}
@@ -166,5 +166,6 @@
   <p>&#169; Carrie Brisson.</p>
   <p>Published with <a href="http://www.postach.io">Postach.io</a>.</p>
   <p>Designed by <a href="http://www.coykiwi.com">coykiwi</a>.</p>
+</footer>
 </body>
 </html>
