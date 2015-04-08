@@ -167,27 +167,38 @@ content ul, {
 
 /* PAGE NAVIGATION */
 
-.page-navigation {
+.post-navigation {
   background: #efe9e8;
-  width: 100%;
+  display: block;
   overflow: auto;
-  margin: 0 auto;
+}
+
+.pagination {
+  overflow: auto;
+  text-align: center;
+  margin: 5%;
+  padding: 5%;
+  position: relative;
 }
 
 .post-navigation a {
   background: #e06148;
+  position: relative;
   text-align: center;
   font-family: "Amatic SC", sans-serif;
   color: #fff;
-  font-size: 30px;
+  font-weight: 300;
+  font-size: 20px;
   border: 2px solid transparent;
-  padding: 2%;
+  text-decoration: none;
+  padding: 5%;
 }
 
-.post-navigation a:hover {
-  border: 2px solid #fff;
-  background: transparent;
-}
+    .post-navigation a:hover {
+      border: 2px solid #e06148;
+      background: transparent;
+      color: #e06148;
+    }
 
 /* HEADER */
 
