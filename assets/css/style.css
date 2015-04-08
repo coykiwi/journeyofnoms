@@ -170,7 +170,8 @@ content ul, {
 .page-navigation {
   background: #efe9e8;
   width: 100%;
-  color:
+  overflow: auto;
+  margin: 0 auto;
 }
 
 .post-navigation a {
