@@ -432,6 +432,10 @@ a:hover .post-title {
   color: #fff;
 }
 
+.disqus_thread {
+  color: #fff;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 1000px) {
