@@ -51,6 +51,10 @@ content ul, {
   color: #000;
 }
 
+content ul {
+  margin-left: 20px;
+}
+
 
 
 /*TOP LEVEL RULES */
@@ -289,7 +293,6 @@ footer p {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: #fff;
-
   display: inline;
   margin: 0 auto;
 }
@@ -594,5 +597,9 @@ a:hover .post-title {
 
   #topcontainer {
     min-height: 75px;
+  }
+
+  #footer p {
+    display: block;
   }
 }
