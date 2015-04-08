@@ -165,6 +165,24 @@ content ul, {
   margin: 0 5%;
 }
 
+/* PAGE NAVIGATION */
+
+.post-navigation a {
+  text-align: center;
+  font-family: "Amatic SC", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  border: 2px solid transparent;
+}
+
+.post-navigation a:hover {
+  border: 2px solid #fff;
+}
+
+.post-navitation button {
+  background: #e06148;
+}
+
 /* HEADER */
 
 header {
