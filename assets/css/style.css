@@ -531,6 +531,10 @@ a:hover .post-title {
   #infobox {
     width: 50%;
   }
+
+  .post-navigation a {
+    font-size: 3vw;
+
 }
 
 @media only screen and (max-device-width: 640px) {
@@ -599,5 +603,9 @@ a:hover .post-title {
 
   #footer p {
     display: block;
+  }
+
+  .post-navigation a {
+    font-size: 4vw;
   }
 }
