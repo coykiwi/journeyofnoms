@@ -132,19 +132,20 @@
       {% endif %}
     {% endfor %}
 
-    <div class="post-navigation">
-      {% if pagination.prev or pagination.next %}
-        <nav class="pagination" role="navigation">
-          {% if pagination.prev %}
-            <a class="newer-posts" href="{{ pagination.prev }}">&#9664; Newer Posts</a>
-          {% endif %}
-          {% if pagination.next %}
-            <a class="older-posts" href="{{ pagination.next }}">Older Posts &#9654;</a>
-            {% endif %}
-          </nav>
-        {% endif %}
-      </div>
   </div>
+
+  <div class="post-navigation">
+    {% if pagination.prev or pagination.next %}
+      <nav class="pagination" role="navigation">
+        {% if pagination.prev %}
+          <a class="newer-posts" href="{{ pagination.prev }}">&#9664; Newer Posts</a>
+        {% endif %}
+        {% if pagination.next %}
+          <a class="older-posts" href="{{ pagination.next }}">Older Posts &#9654;</a>
+          {% endif %}
+        </nav>
+      {% endif %}
+    </div>
 
 
 
@@ -153,8 +154,6 @@
 <!-- v1.2 -->
 
 <footer>
-  <p>&#169; Carrie Brisson</p>
-  <p>Published with <a href="http://www.postach.io">Postach.io</a>.</p>
-  <p>Designed by <a href="http://www.coykiwi.com">coykiwi</a>.</p>
+  <p>&#169; Carrie Brisson | Published with <a href="http://www.postach.io">Postach.io</a>. | Designed by <a href="http://www.coykiwi.com">coykiwi</a>.</p>
 </body>
 </html>
