@@ -520,8 +520,7 @@ a:hover .post-title {
     width: 50%;
   }
 }
-
-@media (max-width: 500px) {
+@media only screen and (max-device-width: 640px) {
 
   #infobox {
     width: 100%;
