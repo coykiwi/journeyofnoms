@@ -167,12 +167,15 @@ content ul, {
 
 /* PAGE NAVIGATION */
 
-.post-navigation a {
-  background: #e06148;
+.page-navigation {
   text-align: center;
   font-family: "Amatic SC", sans-serif;
   color: #fff;
   font-size: 20px;
+}
+
+.post-navigation a {
+  background: #e06148;
   border: 2px solid transparent;
 }
 
@@ -257,15 +260,17 @@ header {
 /* FOOTER */
 
 footer {
-  padding: 10%;
+  padding: 5%;
+  text-align: center;
 }
 
 footer p {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: #fff;
-  text-align: center;
+
   display: inline;
+  margin: 0 auto;
 }
 
 /* POSTS */
