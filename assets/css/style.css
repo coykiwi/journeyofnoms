@@ -186,6 +186,7 @@ content ul, {
 
 .post-navigation a:hover {
   border: 2px solid #fff;
+  background: transparent;
 }
 
 /* HEADER */
