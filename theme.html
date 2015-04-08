@@ -50,6 +50,7 @@
   {% else %}
     {% set main_photo = '' %}
   {% endif %}
+
   <header id="postheader" style="background: url('{{ main_photo }}'); background-size: 100%">
   </header>
 
@@ -80,7 +81,7 @@
   <div id="content">{{ page.content }}</div>
 {% endif %}
 
-{% if is_home or is_tag %}}
+{% if is_home or is_tag %}
   {% if posts[0].photos %}
     {% set featured_photo = posts[0].photos[0].orig %}
   {% else %}
