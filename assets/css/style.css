@@ -302,6 +302,10 @@ footer p {
   color: #fff;
 }
 
+#content img {
+  width: 100%;
+}
+
 #posts {
   background: #efe9e8; /* off-white */
   overflow: hidden;
@@ -451,7 +455,7 @@ a:hover .post-title {
     width: 50%;
   }
 
-@media (max-width: 800px) {
+@media only screen and (max-device-width: 800px) {
 
   .post {
     width: 91vw;
@@ -520,9 +524,10 @@ a:hover .post-title {
     width: 50%;
   }
 }
+
 @media only screen and (max-device-width: 640px) {
 
-  #infobox {
+  #infobox {f
     width: 100%;
   }
 
@@ -549,6 +554,7 @@ a:hover .post-title {
   #buttontext {
     font-size: 30px;
   }
+
   #blurbcontainer {
     width: 92%;
   }
@@ -558,7 +564,7 @@ a:hover .post-title {
   }
 
   #topcontainer {
-    height: 15vh;
+    height: 10vh;
   }
 
   #logo {
