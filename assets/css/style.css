@@ -306,6 +306,10 @@ footer p {
   width: 100%;
 }
 
+#content img:first-of-type {
+  display: none;
+}
+
 #posts {
   background: #efe9e8; /* off-white */
   overflow: hidden;
