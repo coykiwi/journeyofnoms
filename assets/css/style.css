@@ -131,6 +131,7 @@ content ul, {
   font-family: "Amatic SC", sans-serif;
   font-size: 3.5vw;
   overflow: hidden;
+  z-index: 99;
 }
 
 #mainnav a {
@@ -224,6 +225,7 @@ header {
   background-size: 110%;
   padding: 10% 0;
   margin-top: -5%;
+  z-index: -1;
 }
 
 #blurbcontainer,
