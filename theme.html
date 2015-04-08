@@ -138,10 +138,10 @@
       {% if pagination.prev or pagination.next %}
       <nav class="pagination" role="navigation">
       {% if pagination.prev %}
-      <a class="newer-posts" href="{{ pagination.prev }}">&larr; Newer Posts</a>
+      <a class="newer-posts" href="{{ pagination.prev }}">&#9664; Newer Posts</a>
       {% endif %}
       {% if pagination.next %}
-      <a class="older-posts" href="{{ pagination.next }}">Older Posts &rarr;</a>
+      <a class="older-posts" href="{{ pagination.next }}">Older Posts &#9654;</a>
       {% endif %}
       </nav>
       {% endif %}
